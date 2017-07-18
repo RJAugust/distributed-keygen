@@ -266,9 +266,9 @@ generateTypeGPairingParam(const FILE *stream, bool MNTorFreeman,
 
 // Dump the pairing to stdout
 void Pairing::dump(FILE *f, char *label) const{
-  //pairing dumping is yet not available in PBC
+  //pairing dumping is yet not available in PB
 	if (pairingPresent ){
-
-//		pbc_param_out_str(FILE *strm, pbc_param_t p);
+		fprintf(stdout, "G1 length = %d", pairing_length_in_bytes_G2(e));
+	//		pbc_param_out_str(FILE *strm, pbc_param_t p);
 	}
 }
