@@ -99,10 +99,10 @@ public:
   generateTypeGPairingParam(const FILE *stream, bool MNTorFreeman,
 							unsigned int discriminant, 
 							unsigned int bitlimit);
-
-  // Dump the pairing to stdout
-  //void dump(FILE *f, char *label = NULL) const;	
 */
+  // Dump the pairing to stdout
+  void dump(FILE *f, char *label = NULL) const;
+
 
 private:
   //Copy constructor
